@@ -129,11 +129,19 @@ p {
   width: 100%;
   padding: 0.5rem 1rem;
   z-index: 2;
+  height: 4.25rem;
 }
 
 .header__toggle {
   display: flex;
   justify-content: flex-end;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  height: 3.25rem;
+  margin-top: -1rem;
 }
 
 .header__brand .brand__logo {
@@ -152,6 +160,8 @@ p {
   display: flex;
   align-items: center;
   background: var(--primary-bg-color);
+  height: 3.25rem;
+  line-height: 3.25rem;
 }
 
 .menu__item {
@@ -162,6 +172,8 @@ p {
   display: flex;
   align-items: center;
   gap: .5rem;
+  height: 3.25rem;
+  line-height: 3.25rem;
 }
 
 .menu--mobile {
@@ -190,11 +202,11 @@ p {
 }
 
 .menu__icon {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 .menu__text {
-  font-size: .75rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
 
@@ -241,6 +253,16 @@ p {
 
 .btn--primary {
   border: 1px solid var(--primary-color);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn:disabled:hover {
+  transform: none;
 }
 
 main, .projects, .about, .contact {
@@ -312,15 +334,15 @@ main {
 }
 
 .projects__container {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 
 .projects__card {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .card__cover {
@@ -333,9 +355,10 @@ main {
 .card__body {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 1rem;
+  padding: 1rem;
 }
 
 .card__description {
@@ -354,6 +377,7 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin-top: 0.5rem;
 }
 
 .card__buttons .btn {
@@ -379,7 +403,12 @@ main {
 
 .projects .btn {
   width: auto;
-  margin: auto;
+  margin: 2rem auto 0;
+}
+
+.text-center.mt-4 {
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .about {
@@ -577,18 +606,34 @@ footer p {
   }
 }
 
-@media (min-width: 992px) {
-  .projects__card {
-    flex-direction: row;
-  }
-
-  .projects__card.card--reverse {
-    flex-direction: row-reverse;
-    justify-content: space-between;
+@media (min-width: 768px) {
+  .projects__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
   
   .card__cover {
-    width: 55%;
+    height: 350px;
+  }
+}
+
+@media (min-width: 992px) {
+  .projects__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .projects__card {
+    flex-direction: column;
+  }
+
+  .projects__card.card--reverse {
+    flex-direction: column;
+  }
+  
+  .card__cover {
+    width: 100%;
+    height: 400px;
   }
 
   .about {
@@ -689,4 +734,134 @@ footer p {
     padding: 10rem 15rem 4rem;
   }
 
+}
+
+/* Estilos para cards de projetos com hover effect */
+.projects__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background: var(--secondary-bg-color);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.card__cover {
+  width: 100%;
+  height: 300px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.card__hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(17, 18, 23, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.card__hover-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 100%;
+}
+
+.card__hover-title {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.card__hover-description {
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.card__hover-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.card__hover-technologies .technologies__item {
+  width: 3rem;
+  height: 3rem;
+}
+
+.card__hover-technologies .technologies__logo {
+  height: 1.5rem;
+}
+
+.card__hover-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card__hover-buttons .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  min-width: 120px;
+}
+
+/* Hover effect */
+.projects__card:hover .card__cover {
+  transform: scale(1.05);
+}
+
+.projects__card:hover .card__hover-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Esconder o conteúdo original em desktop */
+@media (min-width: 992px) {
+  .card__body {
+    display: none;
+  }
+  
+  .projects__card {
+    aspect-ratio: auto;
+    height: auto;
+  }
+  
+  .card__cover {
+    width: 100%;
+    height: 400px;
+    border-radius: 0.5rem;
+  }
+}
+
+/* Em mobile, manter o layout original */
+@media (max-width: 991px) {
+  .card__hover-overlay {
+    display: none;
+  }
+  
+  .card__body {
+    display: flex;
+  }
 }
