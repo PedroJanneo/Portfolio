@@ -580,7 +580,6 @@
           </div>
         </div>
 
-        <!-- Overlay para hover effect (versão web) -->
         <div class="projects__card">
           <img
             class="card__cover"
@@ -589,7 +588,7 @@
           />
           <div class="card__hover-overlay">
             <div class="card__hover-content">
-              <h3 class="card__hover-title">GIT - Controle de Versão</h3>
+              <h3 class="card__hover-title">GIT</h3>
               <p class="card__hover-description">
                 Projeto de estudo sobre controle de versão utilizando Git e
                 GitHub. Demonstração de comandos básicos e fluxo de trabalho.
@@ -618,30 +617,19 @@
                   />
                 </div>
               </div>
-
-              <div class="card__hover-buttons">
-                <a
-                  href="https://github.com/PedroJanneo/git"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button class="btn btn--primary">
-                    <span>Ver Código</span>
+              <div class="card__hover-buttons" style="display: flex; gap: 10px; justify-content: center;">
+                <a href="https://github.com/PedroJanneo/git" target="_blank" rel="noopener noreferrer">
+                  <button class="btn btn--primary" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;">
+                    <span>GITHUB</span>
                     <i class="bi bi-github"></i>
                   </button>
                 </a>
-                <div class="card__hover-buttons">
-                  <a
-                    href="https://pedrojanneo.github.io/Git/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button class="btn btn--primary">
-                      <span>Ver web</span>
-                      <i class="bi bi-browser-chrome"></i>
-                    </button>
-                  </a>
-                </div>
+                <a href="https://pedrojanneo.github.io/Git/" target="_blank" rel="noopener noreferrer">
+                  <button class="btn btn--primary" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;">
+                    <span>WEB</span>
+                    <i class="bi bi-browser-chrome"></i>
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -682,30 +670,155 @@
               </li>
             </ul>
             <div class="card__buttons">
-              <button class="btn">
-                <a
-                  href="https://github.com/PedroJanneo/git"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+              <a
+                href="https://github.com/PedroJanneo/git"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="btn">
                   <span>Repositório</span>
                   <i class="bi bi-github"></i>
-                </a>
-                <a
-                  href="https://pedrojanneo.github.io/Git/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button class="btn">
-                    <span>Ver web</span>
-                    <i class="bi bi-browser-chrome"></i>
-                  </button>
-                </a>
-              </button>
+                </button>
+              </a>
+              <a
+                href="https://pedrojanneo.github.io/Git/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="btn">
+                  <span>Ver web</span>
+                  <i class="bi bi-browser-chrome"></i>
+                </button>
+              </a>
             </div>
           </div>
         </div>
-      </div>
+        
+        <div class="projects__card">
+          <img
+          class="card__cover"
+          src="assets/images/projects/projeto-scan-vision.jpg"
+          alt="Capa vision scan"
+          />
+          
+          <!-- Overlay para hover effect (versão web) -->
+          <div class="card__hover-overlay">
+            <div class="card__hover-content">
+              <h3 class="card__hover-title">Vision Scan</h3>
+              <p class="card__hover-description">
+                Projeto de reconhecimento facial. Onde ao enviar sua imagem de rosto, ele traz estimativa de alguns dados, como <span>Idade,Genero e Emoção</span>
+              </p>
+              
+              <div class="card__hover-technologies">
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/Javascript.svg"
+                    alt="Logo JavaScript"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/Python.svg"
+                    alt="Logo Python.svg"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/reactnattive.svg"
+                    alt="Logo React Native"
+                  />
+                </div>
+              </div>
+
+              <div class="card__hover-buttons" style="display: flex; gap: 10px; justify-content: center;">
+                <a
+                  href="https://github.com/PedroJanneo/ScanVisionApp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button class="btn btn--primary" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;">
+                    <span>APP</span>
+                    <i class="bi bi-github"></i>
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/PedroJanneo/VisionScanAPI"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button class="btn btn--primary" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;">
+                    <span>API</span>
+                    <i class="bi bi-github"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conteúdo original (versão mobile) -->
+          <div class="card__body">
+            <h3 class="card__title">Vision Scan</h3>
+            <p class="card__description">Reconhecimento Facial</p>
+            <p>
+              Projeto de reconhecimento facial. Onde ao enviar sua imagem de rosto, ele traz estimativa de alguns dados, como Idade, Genero e Emoção.
+            </p>
+            <ul class="card__list">
+              <li class="card__item">Reconhecimento facial</li>
+              <li class="card__item">Estimativa de idade</li>
+              <li class="card__item">Estimativa de gênero</li>
+              <li class="card__item">Estimativa de emoção</li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Javascript.svg"
+                  alt="Logo JavaScript"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Python.svg"
+                  alt="Logo Python"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/reactnattive.svg"
+                  alt="Logo React Native"
+                />
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <a
+                href="https://github.com/PedroJanneo/ScanVisionApp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="btn">
+                  <span>Repositório (APP)</span>
+                  <i class="bi bi-github"></i>
+                </button>
+              </a>
+              <a
+                href="https://github.com/PedroJanneo/VisionScanAPI"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="btn">
+                  <span>Repositório (API)</span>
+                  <i class="bi bi-github"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- div projetos container-->
 
       <div class="text-center mt-4">
         <a href="https://github.com/pedrojanneo" target="_blank">
