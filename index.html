@@ -1,458 +1,789 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portifolio Pedro</title>
-  <meta name="description" content="Portfólio do desenvolvedor Pedro Janneo, desenvolvedor Full stack | BackEnd">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifolio Pedro</title>
+    <meta
+      name="description"
+      content="Portfólio do desenvolvedor Pedro Janneo, desenvolvedor Full stack | BackEnd"
+    />
 
-  <link rel="shortcut icon" href="./assets/images/icon/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-  <header class="header">
-    <nav class="header__nav">
-      <ul class="menu menu--principal">
-        <li class="menu__item">
-          <a class="menu__link active" href="#home">
-            <span class="menu__text">Home</span>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#projetos">
-            <span class="menu__text">Projetos</span>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#sobre">
-            <span class="menu__text">Sobre</span>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#contato">
-            <span class="menu__text">Contato</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header__brand">
-      <a href="#home">
-        <img class="brand__logo" src="assets/images/aa.png" alt="Logo desenvolvedor">
-      </a>
-    </div>
-    <div class="header__toggle">
-      <i id="toggleTheme" class="bi bi-sun"></i>
-    </div>
-  </header>
-  <nav class="nav--mobile">
-    <ul class="menu menu--mobile">
-      <li class="menu__item">
-        <a class="menu__link active" href="#home">
-          <i class="menu__icon bi bi-house-door"></i>
-          <span class="menu__text">Home</span>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/icon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="menu menu--principal">
+          <li class="menu__item">
+            <a class="menu__link active" href="#home">
+              <span class="menu__text">Home</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#projetos">
+              <span class="menu__text">Projetos</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#sobre">
+              <span class="menu__text">Sobre</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contato">
+              <span class="menu__text">Contato</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__brand">
+        <a href="#home">
+          <img
+            class="brand__logo"
+            src="assets/images/aa.png"
+            alt="Logo desenvolvedor"
+          />
         </a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#projetos">
-          <i class="menu__icon bi bi-window-stack"></i>
-          <span class="menu__text">Projetos</span>
-        </a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#sobre">
-          <i class="menu__icon bi bi-person"></i>
-          <span class="menu__text">Sobre</span>
-        </a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#contato">
-          <i class="menu__icon bi bi-envelope"></i>
-          <span class="menu__text">Contato</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
+      </div>
+      <div class="header__toggle">
+        <!-- <i id="toggleTheme" class="bi bi-sun"></i> -->
+      </div>
+    </header>
 
-  <main id="home">
-    <div class="main__content1">
-      <h1>Desenvolvedor FullStack</h1>
-      <p>Pedro, desenvolvedor FullStack | BackEnd</p> 
-      <ul class="menu menu--social">
-        <li>
-          <a class="menu__link" href="https://github.com/pedrojanneo" target="_blank">
-            <i class="menu__icon bi bi-github"></i>
-          </a>
-        </li>
-        <li>
-          <a class="menu__link" href="https://www.linkedin.com/in/pedrojanneo/" target="_blank">
-            <i class="menu__icon bi bi-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a class="menu__link" href="https://www.instagram.com/pedrojanneo/" target="_blank">
-            <i class="menu__icon bi bi-instagram"></i>
-          </a>
-        </li>
-      </ul>
-      <a href="#projetos">
+    <main id="home">
+      <div class="main__content1">
+        <h1>Desenvolvedor FullStack</h1>
+        <p>Pedro, desenvolvedor FullStack | BackEnd</p>
+        <ul class="menu menu--social">
+          <li>
+            <a
+              class="menu__link"
+              href="https://github.com/pedrojanneo"
+              target="_blank"
+            >
+              <i class="menu__icon bi bi-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="menu__link"
+              href="https://www.linkedin.com/in/pedrojanneo/"
+              target="_blank"
+            >
+              <i class="menu__icon bi bi-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="menu__link"
+              href="https://www.instagram.com/pedrojanneo/"
+              target="_blank"
+            >
+              <i class="menu__icon bi bi-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <a href="#projetos">
           <button class="btn btn--primary">
             <span>Ver Projetos</span>
             <i class="bi bi-arrow-down-right"></i>
-          </button>  
+          </button>
         </a>
-    </div>
-
-  </main>
-
-  <section class="technologies">
-    
-    <h2>Conhecimento nas tecnologias</h2>
-    <ul class="technologies__list">
-      <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/technologies/node.svg" alt="Logo Node">
-      </li>
-
-      <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/technologies/java.svg" alt="Logo Java">
-      </li>
-      <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/technologies/php.svg" alt="Logo PHP">
-      </li>
-      <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
-      </li>
-      <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/technologies/git.svg" alt="Logo git ">
-      </li>
-    </ul>
-  </section>
-
-  <section id="projetos" class="projects">
-    <h2>Projetos</h2>
-
-
-    <div class="projects__container">
-      <div class="projects__card">
-        <img class="card__cover" src="assets/images/projects/projeto-crud-node.jfif" alt="Capa Josi's Box">
-        
-        <!-- Overlay para hover effect -->
-        <div class="card__hover-overlay">
-          <div class="card__hover-content">
-            <h3 class="card__hover-title">Sistema de Cadastro</h3>
-            <p class="card__hover-description">Projeto Fullstack desenvolvido durante a formação na faculdade. Sistema completo de livraria com cadastro de livros e usuários.</p>
-            
-            <div class="card__hover-technologies">
-              <div class="technologies__item">
-                <img class="technologies__logo" src="assets/images/technologies/html-5.svg" alt="Logo HTML">
-              </div>
-              <div class="technologies__item">
-                <img class="technologies__logo" src="assets/images/technologies/css-3.svg" alt="Logo CSS">
-              </div>
-              <div class="technologies__item">
-                <img class="technologies__logo" src="assets/images/technologies/TypeScript.svg" alt="Logo TypeScript">
-              </div>
-              <div class="technologies__item">
-                <img class="technologies__logo" src="assets/images/technologies/Javascript.svg" alt="Logo JavaScript">
-              </div>
-            </div>
-            
-            <div class="card__hover-buttons">
-              <a href="https://github.com/PedroJanneo/bookStore2" target="_blank" rel="noopener noreferrer">
-                <button class="btn btn--primary">
-                  <span>Ver Código</span>
-                  <i class="bi bi-github"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Conteúdo original (visível apenas em mobile) -->
-        <div class="card__body">
-          <h3 class="card__title">Sistema de Cadastro</h3>
-          <p class="card__description">Fullstack</p>
-          <p>Projeto desenvolvido durante a formação na faculdade. Onde consiste em um sistema de livraria, onde pode colocar nos  <br> Livros: Titulo, preço e autor. <br> Usuarios: nome, email e senha (provisoria) </p>
-          <ul class="card__list">
-            <li class="card__item">Listagem de livros cadastros</li>
-            <li class="card__item">Listagem de usuarios cadastros</li>
-            <li class="card__item">Sistema de login e autenticação</li>
-          </ul>
-          <ul class="technologies__list">
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/html-5.svg" alt="Logo HTML">
-            </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/css-3.svg" alt="Logo CSS">
-            </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/TypeScript.svg" alt="Logo TypeScript">
-            </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/Javascript.svg" alt="Logo JavaScript">
-            </li>
-          </ul>
-          <div class="card__buttons">
-            <button class="btn">
-              <a href="https://github.com/PedroJanneo/bookStore2" target="_blank" rel="noopener noreferrer"> <span>Repositório</a></span>
-            </button>  
-          </div>
-        </div>
       </div>
+    </main>
 
-             <div class="projects__card card--reverse">
-         <img class="card__cover" src="assets/images/projects/placeholder.jpg" alt="Projeto em Andamento">
-         
-         <!-- Overlay para hover effect -->
-         <div class="card__hover-overlay">
-           <div class="card__hover-content">
-             <h3 class="card__hover-title">Projeto em Andamento</h3>
-             <p class="card__hover-description">Novo projeto sendo desenvolvido com Java e Spring Boot. Em breve mais detalhes!</p>
-             
-             <div class="card__hover-technologies">
-               <div class="technologies__item">
-                 <img class="technologies__logo" src="assets/images/technologies/java.svg" alt="Logo Java">
-               </div>
-               <div class="technologies__item">
-                 <img class="technologies__logo" src="assets/images/technologies/spring.svg" alt="Logo Spring Boot">
-               </div>
-             </div>
-             
-             <div class="card__hover-buttons">
-               <button class="btn btn--primary" disabled>
-                 <span>Em Breve</span>
-                 <i class="bi bi-clock"></i>
-               </button>
-             </div>
-           </div>
-         </div>
-         
-         <!-- Conteúdo original (visível apenas em mobile) -->
-         <div class="card__body">
-           <h3 class="card__title">-- ANDAMENTO --</h3>
-           <p class="card__description">Em breve</p>
-           <ul class="card__list">
-             <li class="card__item">Em breve</li>
-           </ul>
-           <ul class="technologies__list">
-             <li class="technologies__item">
-               <img class="technologies__logo" src="assets/images/technologies/java.svg" alt="Logo Java">
-             </li>
-             <li class="technologies__item">
-               <img class="technologies__logo" src="assets/images/technologies/spring.svg" alt="Logo Spring Boot">
-             </li>
-           </ul>
-           <div class="card__buttons">
-             <button class="btn" disabled>
-               <span>Em Breve</span>
-             </button> 
-           </div>
-         </div>
-       </div>
-      <div class="projects__card">
-        <img class="card__cover" src="assets/images/projects/projeto-sms.png" alt="Capa SMS">
-        
-        <!-- Overlay para hover effect -->
-        <div class="card__hover-overlay">
-          <div class="card__hover-content">
-            <h3 class="card__hover-title">Notifyme</h3>
-            <p class="card__hover-description">Projeto Fullstack que simula um sistema de SMS, onde o usuário pode enviar e receber mensagens como lembretes de eventos futuros.</p>
-            
-            <div class="card__hover-technologies">
-              <div class="technologies__item">
-                <img class="technologies__logo" src="assets/images/technologies/node.svg" alt="Logo Node">
-              </div>
-              <div class="technologies__item">
-                <img class="technologies__logo" src="assets/images/technologies/bootstrap.svg" alt="Logo Bootstrap">
-              </div>
-              <div class="technologies__item">
-                <img class="technologies__logo" src="assets/images/technologies/html-5.svg" alt="Logo HTML">
-              </div>
-              <div class="technologies__item">
-                <img class="technologies__logo" src="assets/images/technologies/css-3.svg" alt="Logo CSS">
-              </div>
-            </div>
-            
-            <div class="card__hover-buttons">
-              <a href="https://github.com/PedroJanneo/Notifyme" target="_blank" rel="noopener noreferrer">
-                <button class="btn btn--primary">
-                  <span>Ver Código</span>
-                  <i class="bi bi-github"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Conteúdo original (visível apenas em mobile) -->
-        <div class="card__body">
-          <h3 class="card__title">Notifyme</h3>
-          <p class="card__description">Fullstack</p>
-          <p>Projeto que simula um sistema de SMS, onde o usuario pode enviar e receber mensagens. Como forma de lembretes de eventos futuros</p>
-          <ul class="card__list">
-            <li class="card__item">Envio de mensagens</li>
-            <li class="card__item">Recebimento de mensagens</li>
-            <li class="card__item">Listagem de mensagens</li>
-            <li class="card__item">Listagem de contatos</li>
-            <li class="card__item">Listagem de eventos</li>
+    <section class="technologies">
+      <h2>Conhecimento nas tecnologias</h2>
+      <ul class="technologies__list">
+        <li class="technologies__item">
+          <img
+            class="technologies__logo"
+            src="assets/images/technologies/node.svg"
+            alt="Logo Node"
+          />
+        </li>
 
-          </ul>
-          <ul class="technologies__list">
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/node.svg" alt="Logo Node">
-            </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/bootstrap.svg" alt="Logo Bootstrap">
-            </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/html-5.svg" alt="Logo HTML">
-            </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/css-3.svg" alt="Logo CSS">
-            </li>
-          </ul>
+        <li class="technologies__item">
+          <img
+            class="technologies__logo"
+            src="assets/images/technologies/java.svg"
+            alt="Logo Java"
+          />
+        </li>
+        <li class="technologies__item">
+          <img
+            class="technologies__logo"
+            src="assets/images/technologies/php.svg"
+            alt="Logo PHP"
+          />
+        </li>
+        <li class="technologies__item">
+          <img
+            class="technologies__logo"
+            src="assets/images/technologies/Bootstrap.svg"
+            alt="Logo Bootstrap"
+          />
+        </li>
+        <li class="technologies__item">
+          <img
+            class="technologies__logo"
+            src="assets/images/technologies/git.svg"
+            alt="Logo git "
+          />
+        </li>
+      </ul>
+    </section>
 
-          <div class="card__buttons">
-            <button class="btn"> 
-             <a href="https://github.com/PedroJanneo/Notifyme" target="_blank" rel="noopener noreferrer"><span>Repositório</span></a>
-            </button>  
-          </div>
-        </div>
-       </div>
-       
-       <div class="projects__card">
-         <img class="card__cover" src="assets/images/projects/projeto-pdv.jpg" alt="Capa PDV">
-         
-         <!-- Overlay para hover effect -->
-         <div class="card__hover-overlay">
-           <div class="card__hover-content">
-             <h3 class="card__hover-title">PDV - Sistema de Vendas</h3>
-             <p class="card__hover-description">Projeto CRUD desenvolvido durante estágio e estudos de PHP com PDO. Sistema completo de ponto de venda com cadastro de usuários e itens.</p>
-             
-             <div class="card__hover-technologies">
-               <div class="technologies__item">
-                 <img class="technologies__logo" src="assets/images/technologies/php.svg" alt="Logo PHP">
-               </div>
-               <div class="technologies__item">
-                 <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
-               </div>
-               <div class="technologies__item">
-                 <img class="technologies__logo" src="assets/images/technologies/Javascript.svg" alt="Logo JavaScript">
-               </div>
-             </div>
-             
-             <div class="card__hover-buttons">
-               <a href="https://github.com/PedroJanneo/PDV" target="_blank" rel="noopener noreferrer">
-                 <button class="btn btn--primary">
-                   <span>Ver Código</span>
-                   <i class="bi bi-github"></i>
-                 </button>
-               </a>
-             </div>
-           </div>
-         </div>
-         
-         <!-- Conteúdo original (visível apenas em mobile) -->
-         <div class="card__body">
-           <h3 class="card__title">PDV - Sistema de Vendas</h3>
-           <p class="card__description">CRUD PHP/PDO</p>
-           <p>Projeto desenvolvido durante meu estágio e estudos de PHP com PDO. Sistema completo de ponto de venda.</p>
-           <ul class="card__list">
-             <li class="card__item">Cadastro de usuários</li>
-             <li class="card__item">Cadastro de itens</li>
-             <li class="card__item">Cadastro de Fornecedores</li>
-           </ul>
-           <ul class="technologies__list">
-             <li class="technologies__item">
-               <img class="technologies__logo" src="assets/images/technologies/php.svg" alt="Logo PHP">
-             </li>
-             <li class="technologies__item">
-               <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
-             </li>
-             <li class="technologies__item">
-               <img class="technologies__logo" src="assets/images/technologies/Javascript.svg" alt="Logo JavaScript">
-             </li>
-           </ul>
-           <div class="card__buttons">
-             <button class="btn">
-               <a href="https://github.com/PedroJanneo/PDV" target="_blank" rel="noopener noreferrer">
-                 <span>Repositório</span>
-               </a>
-             </button>  
-           </div>
-         </div>
-       </div>
-     </div>
-    </div>
+    <section id="projetos" class="projects">
+      <h2>Projetos</h2>
 
-      
+      <div class="projects__container">
+        <div class="projects__card">
+          <img
+            class="card__cover"
+            src="assets/images/projects/projeto-crud-node.jfif"
+            alt="Capa Josi's Box"
+          />
 
+          <!-- Overlay para hover effect (versão WEB) -->
+          <div class="card__hover-overlay">
+            <div class="card__hover-content">
+              <h3 class="card__hover-title">Sistema de Cadastro</h3>
+              <p class="card__hover-description">
+                Projeto Fullstack desenvolvido durante a formação na faculdade.
+                Sistema completo de livraria com cadastro de livros e usuários.
+              </p>
 
-     <div class="text-center mt-4">
-       <a href="https://github.com/pedrojanneo" target="_blank">
-         <button class="btn btn--primary">
-           <span>Ver Todos os Projetos</span>
-           <i class="bi bi-arrow-up-right"></i>
-         </button>  
-       </a>
-     </div>
-  </section>
-
-  <section id="sobre" class="about">
-    <div class="about__content1">
-      <img class="about__photo" src="https://media.licdn.com/dms/image/v2/D4D03AQHVsHY7LUqwvw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1727339910179?e=1756944000&v=beta&t=MQKRvtRIdV8dhEMnW8_85Vw6qFraiq6b7g08-tvoB_A" alt="">
-      <div class="about__description">
-        <h2>Sobre mim</h2>
-        <p>Olá, sou Pedro Janneo, apaixonado por tecnologia. Meu primeiro contato com programação foi no ensino médio, quando comecei a testar diversas áreas e descobri o mundo do HTML, CSS e um pouco de JavaScript, utilizando o VS Code. Atualmente, sou formado em Análise e Desenvolvimento de Sistema e trabalho como desenvolvedor FullStack Júnior na Prefeitura de Taboão da Serra.</p>
-        <div class="about__icons">
-          <i class="bi bi-translate"></i>
-          <span>Inglês: Básico</span>
-        </div>
-        <div class="description__buttons">
-          <a href="https://www.linkedin.com/in/pedrojanneo/" target="_blank">
-            <button class="btn btn--primary">
-              <span>Conecte-se Comigo</span>
-              <i class="bi bi-arrow-up-right"></i>
-            </button> 
-          </a>
-          <a href="">
-            <button class="btn">
-              <span>Currículo</span>
-            </button>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="about__content2">
-      <div class="col1">
-        <div class="row1">
-          <h3 class="fw-medium">Formação</h3>
-          <div class="card bg-dark text-white container">
-            <div class="card-body">
-              <div class="card-title">
-                <h4>Analise e Desenvolvimento de Sistema</h4>
-              </div>
-              <div class="card-text">
-                <span>Abril 2023 - Abril 2025</span><br>
-                <span>Unifecaf</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="row2">
-          <h3 class="fw-medium">Experiências</h3>
-          <div class="card bg-dark text-white container">
-            <div class="card-body">
-              <div class="card-title">
-                <h4>Estágio</h4>
+              <div class="card__hover-technologies">
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/html-5.svg"
+                    alt="Logo HTML"
+                  />
                 </div>
-                <span>Prefeitura de Taboão da Serra</span><br>
-                <span>Abril 2023 - Abril 2024</span><br>
-                <span>Desenvolvedor Full-stack</span><br>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/css-3.svg"
+                    alt="Logo CSS"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/TypeScript.svg"
+                    alt="Logo TypeScript"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/Javascript.svg"
+                    alt="Logo JavaScript"
+                  />
+                </div>
+              </div>
+
+              <div class="card__hover-buttons">
+                <a
+                  href="https://github.com/PedroJanneo/bookStore2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button class="btn btn--primary">
+                    <span>Ver Código</span>
+                    <i class="bi bi-github"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conteúdo original ( versão mobile) -->
+          <div class="card__body">
+            <h3 class="card__title">Sistema de Cadastro</h3>
+            <p class="card__description">Fullstack</p>
+            <p>
+              Projeto desenvolvido durante a formação na faculdade. Onde
+              consiste em um sistema de livraria, onde pode colocar nos <br />
+              Livros: Titulo, preço e autor. <br />
+              Usuarios: nome, email e senha (provisoria)
+            </p>
+            <ul class="card__list">
+              <li class="card__item">Listagem de livros cadastros</li>
+              <li class="card__item">Listagem de usuarios cadastros</li>
+              <li class="card__item">Sistema de login e autenticação</li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/html-5.svg"
+                  alt="Logo HTML"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/css-3.svg"
+                  alt="Logo CSS"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/TypeScript.svg"
+                  alt="Logo TypeScript"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Javascript.svg"
+                  alt="Logo JavaScript"
+                />
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <button class="btn">
+                <a
+                  href="https://github.com/PedroJanneo/bookStore2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Repositório</span>
+                  <i class="bi bi-github"></i>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__card card--reverse">
+          <img
+            class="card__cover"
+            src="assets/images/projects/placeholder.jpg"
+            alt="Projeto em Andamento"
+          />
+
+          <!-- Overlay para hover effect (versão web) -->
+          <div class="card__hover-overlay">
+            <div class="card__hover-content">
+              <h3 class="card__hover-title">Projeto em Andamento</h3>
+              <p class="card__hover-description">
+                Novo projeto sendo desenvolvido com Java e Spring Boot. Em breve
+                mais detalhes!
+              </p>
+
+              <div class="card__hover-technologies">
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/java.svg"
+                    alt="Logo Java"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/spring.svg"
+                    alt="Logo Spring Boot"
+                  />
+                </div>
+              </div>
+
+              <div class="card__hover-buttons">
+                <button class="btn btn--primary" disabled>
+                  <span>Em Breve</span>
+                  <i class="bi bi-clock"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conteúdo original (v versao mobile) -->
+          <div class="card__body">
+            <h3 class="card__title">-- ANDAMENTO --</h3>
+            <p class="card__description">Em breve</p>
+            <ul class="card__list">
+              <li class="card__item">Em breve</li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/java.svg"
+                  alt="Logo Java"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/spring.svg"
+                  alt="Logo Spring Boot"
+                />
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <button class="btn" disabled>
+                <span>Em Breve</span>
+                <i class="bi bi-clock"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card">
+          <img
+            class="card__cover"
+            src="assets/images/projects/projeto-sms.png"
+            alt="Capa SMS"
+          />
+
+          <!-- Overlay para hover effect (versão web) -->
+          <div class="card__hover-overlay">
+            <div class="card__hover-content">
+              <h3 class="card__hover-title">Notifyme</h3>
+              <p class="card__hover-description">
+                Projeto Fullstack que simula um sistema de SMS, onde o usuário
+                pode enviar e receber mensagens como lembretes de eventos
+                futuros.
+              </p>
+
+              <div class="card__hover-technologies">
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/node.svg"
+                    alt="Logo Node"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/bootstrap.svg"
+                    alt="Logo Bootstrap"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/html-5.svg"
+                    alt="Logo HTML"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/css-3.svg"
+                    alt="Logo CSS"
+                  />
+                </div>
+              </div>
+
+              <div class="card__hover-buttons">
+                <a
+                  href="https://github.com/PedroJanneo/Notifyme"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button class="btn btn--primary">
+                    <span>Ver Código</span>
+                    <i class="bi bi-github"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conteúdo original (versao mobile) -->
+          <div class="card__body">
+            <h3 class="card__title">Notifyme</h3>
+            <p class="card__description">Fullstack</p>
+            <p>
+              Projeto que simula um sistema de SMS, onde o usuario pode enviar e
+              receber mensagens. Como forma de lembretes de eventos futuros
+            </p>
+            <ul class="card__list">
+              <li class="card__item">Envio de mensagens</li>
+              <li class="card__item">Recebimento de mensagens</li>
+              <li class="card__item">Listagem de mensagens</li>
+              <li class="card__item">Listagem de contatos</li>
+              <li class="card__item">Listagem de eventos</li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/node.svg"
+                  alt="Logo Node"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/bootstrap.svg"
+                  alt="Logo Bootstrap"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/html-5.svg"
+                  alt="Logo HTML"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/css-3.svg"
+                  alt="Logo CSS"
+                />
+              </li>
+            </ul>
+
+            <div class="card__buttons">
+              <button class="btn">
+                <a
+                  href="https://github.com/PedroJanneo/Notifyme"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Repositório</span>
+                  <i class="bi bi-github"></i>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__card">
+          <img
+            class="card__cover"
+            src="assets/images/projects/projeto-pdv.png"
+            alt="Capa PDV"
+          />
+
+          <!-- Overlay para hover effect (versão web) -->
+          <div class="card__hover-overlay">
+            <div class="card__hover-content">
+              <h3 class="card__hover-title">PDV - Sistema de Vendas</h3>
+              <p class="card__hover-description">
+                Projeto CRUD desenvolvido durante estágio e estudos de PHP com
+                PDO. Sistema completo de ponto de venda com cadastro de usuários
+                e itens.
+              </p>
+
+              <div class="card__hover-technologies">
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/php.svg"
+                    alt="Logo PHP"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/Bootstrap.svg"
+                    alt="Logo Bootstrap"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/Javascript.svg"
+                    alt="Logo JavaScript"
+                  />
+                </div>
+              </div>
+
+              <div class="card__hover-buttons">
+                <a
+                  href="https://github.com/PedroJanneo/PDV"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button class="btn btn--primary">
+                    <span>Ver Código</span>
+                    <i class="bi bi-github"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conteúdo original (visível apenas em mobile) -->
+          <div class="card__body">
+            <h3 class="card__title">PDV - Sistema de Vendas</h3>
+            <p class="card__description">CRUD PHP/PDO</p>
+            <p>
+              Projeto desenvolvido durante meu estágio e estudos de PHP com PDO.
+              Sistema completo de ponto de venda.
+            </p>
+            <ul class="card__list">
+              <li class="card__item">Cadastro de usuários</li>
+              <li class="card__item">Cadastro de itens</li>
+              <li class="card__item">Cadastro de Fornecedores</li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/php.svg"
+                  alt="Logo PHP"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Bootstrap.svg"
+                  alt="Logo Bootstrap"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Javascript.svg"
+                  alt="Logo JavaScript"
+                />
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <button class="btn">
+                <a
+                  href="https://github.com/PedroJanneo/PDV"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Repositório</span>
+                  <i class="bi bi-github"></i>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Overlay para hover effect (versão web) -->
+        <div class="projects__card">
+          <img
+            class="card__cover"
+            src="assets/images/projects/projeto-git.png"
+            alt="Capa GIT"
+          />
+          <div class="card__hover-overlay">
+            <div class="card__hover-content">
+              <h3 class="card__hover-title">GIT - Controle de Versão</h3>
+              <p class="card__hover-description">
+                Projeto de estudo sobre controle de versão utilizando Git e
+                GitHub. Demonstração de comandos básicos e fluxo de trabalho.
+              </p>
+
+              <div class="card__hover-technologies">
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/git.svg"
+                    alt="Logo Git"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/Bootstrap.svg"
+                    alt="Logo Bootstrap"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/Javascript.svg"
+                    alt="Logo JavaScript"
+                  />
+                </div>
+              </div>
+
+              <div class="card__hover-buttons">
+                <a
+                  href="https://github.com/PedroJanneo/git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button class="btn btn--primary">
+                    <span>Ver Código</span>
+                    <i class="bi bi-github"></i>
+                  </button>
+                </a>
+                <div class="card__hover-buttons">
+                  <a
+                    href="https://pedrojanneo.github.io/Git/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button class="btn btn--primary">
+                      <span>Ver web</span>
+                      <i class="bi bi-browser-chrome"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conteúdo original (visível apenas em mobile) -->
+          <div class="card__body">
+            <h3 class="card__title">GIT - Controle de Versão</h3>
+            <p class="card__description">Documentação do GIT</p>
+            <p>
+              Projeto de estudo sobre controle de versão utilizando Git e
+              GitHub. Demonstração de comandos básicos e fluxo de trabalho.
+            </p>
+            <ul class="card__list">
+              <li class="card__item">Documentação branch</li>
+              <li class="card__item">Documentação commit</li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/git.svg"
+                  alt="Logo git"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Bootstrap.svg"
+                  alt="Logo Bootstrap"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Javascript.svg"
+                  alt="Logo JavaScript"
+                />
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <button class="btn">
+                <a
+                  href="https://github.com/PedroJanneo/git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Repositório</span>
+                  <i class="bi bi-github"></i>
+                </a>
+                <a
+                  href="https://pedrojanneo.github.io/Git/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button class="btn">
+                    <span>Ver web</span>
+                    <i class="bi bi-browser-chrome"></i>
+                  </button>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="https://github.com/pedrojanneo" target="_blank">
+          <button class="btn btn--primary">
+            <span>Ver Todos os Projetos</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <section id="sobre" class="about">
+      <div class="about__content1">
+        <img
+          class="about__photo"
+          src="https://media.licdn.com/dms/image/v2/D4D03AQHVsHY7LUqwvw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1727339910179?e=1756944000&v=beta&t=MQKRvtRIdV8dhEMnW8_85Vw6qFraiq6b7g08-tvoB_A"
+          alt=""
+        />
+        <div class="about__description">
+          <h2>Sobre mim</h2>
+          <p>
+            Olá, sou Pedro Janneo, apaixonado por tecnologia. Meu primeiro
+            contato com programação foi no ensino médio, quando comecei a testar
+            diversas áreas e descobri o mundo do HTML, CSS e um pouco de
+            JavaScript, utilizando o VS Code. Atualmente, sou formado em Análise
+            e Desenvolvimento de Sistema e trabalho como desenvolvedor FullStack
+            Júnior na Prefeitura de Taboão da Serra.
+          </p>
+          <div class="about__icons">
+            <i class="bi bi-translate"></i>
+            <span>Inglês: intermediário (leitura)</span>
+          </div>
+          <div class="description__buttons">
+            <a href="https://www.linkedin.com/in/pedrojanneo/" target="_blank">
+              <button class="btn btn--primary">
+                <span>Conecte-se Comigo</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+            <a href="assets/files/Currículo_Pedro_Janneo_2025.pdf" download>
+              <button class="btn">
+                <span>Currículo</span>
+                <i class="bi bi-download"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="about__content2">
+        <div class="col1">
+          <div class="row1">
+            <h3 class="fw-medium">Formação</h3>
+            <div class="card bg-dark text-white container">
+              <div class="card-body">
+                <div class="card-title">
+                  <h4>Analise e Desenvolvimento de Sistema</h4>
+                </div>
+                <div class="card-text">
+                  <span>Abril 2023 - Abril 2025</span><br />
+                  <span>Unifecaf</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row2">
+            <h3 class="fw-medium">Experiências</h3>
+            <div class="card bg-dark text-white container">
+              <div class="card-body">
+                <div class="card-title">
+                  <h4>Estágio</h4>
+                </div>
+                <span>Prefeitura de Taboão da Serra</span><br />
+                <span>Abril 2023 - Abril 2024</span><br />
+                <span>Desenvolvedor Full-stack</span><br />
                 <span class="card-text fs-5 fw-semibold">Stacks:</span>
-                <span class="fs-6">HTML, CSS, JavaScript, PHP, MySQL e Python</span>
+                <span class="fs-6"
+                  >HTML, CSS, JavaScript, PHP, MySQL e Python</span
+                >
               </div>
             </div>
           </div>
@@ -462,60 +793,70 @@
                 <h4>Desenvolvedor Júnior</h4>
               </div>
               <div class="card-text">
-                <span>Prefeitura de Taboão da Serra</span><br>
-                <span>Abril 2025 - Atualmente</span><br>
-                <span>Desenvolvedor Full-stack</span><br>
+                <span>Prefeitura de Taboão da Serra</span><br />
+                <span>Abril 2025 - Atualmente</span><br />
+                <span>Desenvolvedor Full-stack</span><br />
                 <span class="card-text fs-5 fw-semibold">Stacks:</span>
                 <span class="fs-6">HTML, CSS, JavaScript, PHP e MySQL</span>
+              </div>
             </div>
           </div>
-
-          
         </div>
       </div>
-    </div>
-     
-  </section>
-  
-  <section id="contato" class="contact">
-    <h2>Contate-me</h2>
-    <p>Estou disponível para serviços e novas conexões. Contate-me via 
-      e-mail e conecte-se comigo através das minhas redes sociais.
-    </p>
-    <ul class="menu menu--social">
-      <li>
-        <a class="menu__link" href="https://github.com/pedrojanneo" target="_blank">
-          <i class="menu__icon bi bi-github"></i>
-          <span>GitHub</span>
-        </a>
-      </li>
-      <li>
-        <a class="menu__link" href="https://www.linkedin.com/in/pedrojanneo/" target="_blank">
-          <i class="menu__icon bi bi-linkedin"></i>
-          <span>LinkedIn</span>
-        </a>
-      </li>
-      <li>
-        <a class="menu__link" href="" target="_blank">
-          <i class="menu__icon bi bi-instagram"></i>
-          <span>Instagram</span>
-        </a>
-      </li>
-    </ul>
-    <a href="mailto:pdro.henriquejanneo@gmail.com">
-      <button class="btn btn--primary">
-        <span class="email">pdro.henriquejanneo@gmail.com</span>
-      </button>  
-    </a>
-  </section>
+    </section>
 
-  <footer>
-    <p>
-      © 2023. Portfólio do
-      <a href="https://github.com/pedrojanneo" target="_blank">Pedro</a>.
-    </p>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <script src="./assets/scripts/main.js"></script>
-</body>
+    <section id="contato" class="contact">
+      <h2>Contate-me</h2>
+      <p>
+        Estou disponível para serviços e novas conexões. Contate-me via e-mail e
+        conecte-se comigo através das minhas redes sociais.
+      </p>
+      <ul class="menu menu--social">
+        <li>
+          <a
+            class="menu__link"
+            href="https://github.com/pedrojanneo"
+            target="_blank"
+          >
+            <i class="menu__icon bi bi-github"></i>
+            <span>GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="menu__link"
+            href="https://www.linkedin.com/in/pedrojanneo/"
+            target="_blank"
+          >
+            <i class="menu__icon bi bi-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.instagram.com/pedrojanneo/" target="_blank">
+            <i class="menu__icon bi bi-instagram"></i>
+            <span>Instagram</span>
+          </a>
+        </li>
+      </ul>
+      <a href="mailto:pdro.henriquejanneo@gmail.com">
+        <button class="btn btn--primary">
+          <span class="email">pdro.henriquejanneo@gmail.com</span>
+        </button>
+      </a>
+    </section>
+
+    <footer>
+      <p>
+        © 2023. Portfólio do
+        <a href="https://github.com/pedrojanneo" target="_blank">Pedro Janneo</a>.
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/scripts/main.js"></script>
+  </body>
 </html>
