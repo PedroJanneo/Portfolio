@@ -1,10 +1,6 @@
-# Portfólio Pedro
+# Portfólio Pedro Janneo
 
-Este é o portfólio do desenvolvedor Pedro Janneo, desenvolvedor Full Stack | BackEnd.
-
-## Descrição
-
-Este projeto é um portfólio pessoal que apresenta os projetos, habilidades e informações de contato do desenvolvedor Pedro Janneo.
+Este é meu portfólio pessoal, onde apresento um pouco sobre mim, mostro meus projetos pessoais, minhas habilidades e formas de entrar em contato.
 
 ## Tecnologias Utilizadas
 
@@ -23,19 +19,19 @@ Este projeto é um portfólio pessoal que apresenta os projetos, habilidades e i
 
 ## Funcionalidades
 
-- **Tema Escuro/Claro**: Alternar entre tema escuro e claro.
 - **Accordion**: Seções expansíveis para exibir mais informações.
 - **Menu de Navegação**: Links para diferentes seções do portfólio.
 - **Links Sociais**: Links para perfis de redes sociais.
 
 ## Seções do Portfólio
 
-- **Home**: Introdução ao portifolio.
-- **Tecnologias**: Tecnologias e ferramentas que Pedro conhece.
-- **Projetos**: Projetos desenvolvidos por Pedro com links para repositórios.
-- **Sobre**: Informações sobre Pedro, sua formação e experiências.
-- **Contato**: Formas de entrar em contato com Pedro.
+- **Home**: Introdução.  
+- **Tecnologias**: Tecnologias e ferramentas que utilizo.  
+- **Preferidas**: Tecnologias que prefiro trabalhar.  
+- **Projetos**: Projetos que desenvolvi com links para repositórios.  
+- **Sobre**: Formação, experiências e informações sobre mim.  
+- **Contato**: Formas de me contatar.
 
 ## Deploy
 
-[Portifolio do Pedro](https://portifolio-sand-one.vercel.app/)
+[Veja meu portfólio online](https://portifolio-sand-one.vercel.app/)
