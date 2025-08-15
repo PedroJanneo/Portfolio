@@ -323,6 +323,45 @@ main {
   border-radius: 50rem;
 }
 
+
+
+/* Efeito de hover: quando o mouse passa sobre o item da lista */
+.technologies__item:hover {
+  /* Move o elemento para cima em 10 pixels */
+  transform: scale(1.1); /* Efeito de hover para dar vida */
+}
+
+#typewriter {
+  color: #bbb;
+  font-size: 1.2rem;
+  font-family: 'Courier New', monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #00ffae;
+  animation: blink 0.7s infinite;
+  margin-top: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+  #typewriter {
+    white-space: normal;   /* permite quebrar linha no mobile */
+    overflow: visible;
+    word-break: break-word;
+      vertical-align: bottom;
+  }
+}
+
+  
+
+  /* Animação do cursor piscando */
+@keyframes blink {
+  0%, 50% { border-color: #00ffae; }
+  51%, 100% { border-color: transparent; }
+}
+
+  
 .technologies__logo {
   height: 2.4rem;
 }
@@ -656,6 +695,82 @@ footer p {
     justify-content: flex-start;
   }
 }
+/* Estilos para o grupo de ícones */
+.section-tecnologias,
+.section-stacks-foco {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section-tecnologias h2,
+.section-stacks-foco h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.icon-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Espaçamento entre os ícones */
+}
+
+.icon-group img {
+    width: 60px; /* Tamanho dos ícones */
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #555;
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-group img:hover {
+    transform: scale(1.1); /* Efeito de hover para dar vida */
+}
+
+/* Estilos específicos para a seção de Stacks de Foco (para destacar) */
+.section-stacks-foco {
+    background-color: #2a2c31; /* Fundo levemente diferente para destacar */
+}
+
+.section-stacks-foco .icon-group img {
+    border: 2px solid #555; /* Borda com cor diferente para chamar a atenção */
+}
+
+
+
+/* ----------------------------------------------------
+ * ESTILOS PARA RESPONSIVIDADE (NOVO CÓDIGO)
+ * ----------------------------------------------------
+ */
+
+@media (max-width: 768px) {
+  /* Reduz o tamanho da fonte do título em telas menores */
+  .technologies h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Ajusta o espaçamento interno da seção */
+  .technologies {
+    padding: 4rem 1rem 2rem;
+    gap: 1rem;
+  }
+  
+  /* Reduz o tamanho dos ícones e seus contêineres */
+  .technologies__item {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .technologies__logo {
+    height: 1.8rem;
+  }
+}
+
+
 
 @media (min-width: 1200px) {
 
@@ -837,7 +952,65 @@ footer p {
   visibility: visible;
 }
 
+
+#home {
+  /* Estilos para a tela inteira, garantindo o espaço */
+  min-height: 100vh;
+  width: 100%;
+  
+  /* Usa Flexbox para alinhamento */
+  display: flex;
+  flex-direction: column;
+  
+  /* A partir daqui, definimos os alinhamentos para desktop */
+  align-items: center; 
+  justify-content: flex-start; /* Centraliza VERTICALMENTE para PC */
+}
+
+
+.nome-programador {
+  /* Estilos básicos para o texto */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  font-weight: bold; /* Deixa o texto mais legível */
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Estilos para o degradê no texto */
+  background-image: linear-gradient(to right, #007bff, #28a745); /* Degradê de azul para verde */
+  -webkit-background-clip: text; /* Aplica o degradê apenas na área do texto (para navegadores Webkit) */
+  -webkit-text-fill-color: transparent; /* Torna a cor do texto transparente para que o degradê seja visível */
+  background-clip: text; /* Versão padrão da propriedade */
+  color: transparent; /* fallback para navegadores que não suportam */
+}
+
+.nome-programador::before {
+  content: '<'; /* O conteúdo do pseudo-elemento */
+  color: #3aa7d1; /* Cor das setas */
+  margin-right: 5px; /* Espaçamento entre a seta e o texto */
+}
+
+.nome-programador::after {
+  content: '/>'; /* O conteúdo do pseudo-elemento */
+  color: #28a745; /* Cor verde para a seta */
+  margin-left: 5px; /* Espaçamento entre o texto e a seta */
+}
+
 /* Esconder o conteúdo original em desktop */
+
+@media (max-width: 768px) {
+  #home {
+    /* Altera o alinhamento vertical para o topo */
+    justify-content: flex-start;
+    
+    /* Adiciona um padding no topo para afastar o conteúdo da borda */
+    padding-top: 2rem; 
+  }
+}
 @media (min-width: 992px) {
   .card__body {
     display: none;
@@ -864,4 +1037,10 @@ footer p {
   .card__body {
     display: flex;
   }
+}
+
+/* Ajustes mobile extras */
+@media (max-width: 768px) {
+  .about__content1 { display: grid; gap: 16px; justify-items: center; }
+  .header__brand { padding-inline: 12px; }
 }

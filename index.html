@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio Pedro Janneo</title>
+    <title>Pedro Janneo</title>
     <meta
       name="description"
-      content="Portfólio do desenvolvedor Pedro Janneo, desenvolvedor Full stack | BackEnd"
+      content="Portfólio do desenvolvedor Pedro Janneo, desenvolvedor BackEnd, com experiência em FullStack"
     />
 
     <link
@@ -25,6 +25,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
   <body>
     <header class="header">
@@ -52,109 +55,179 @@
           </li>
         </ul>
       </nav>
-      <div class="header__brand">
-        <a href="#home">
-          <img
-            class="brand__logo"
-            src="assets/images/aa.png"
-            alt="Logo desenvolvedor"
-          />
-        </a>
-      </div>
+
+      
+
+
       <div class="header__toggle">
         <!-- <i id="toggleTheme" class="bi bi-sun"></i> -->
       </div>
     </header>
 
-    <main id="home">
-      <div class="main__content1">
-        <h1>Desenvolvedor FullStack</h1>
-        <p>Pedro, desenvolvedor FullStack | BackEnd</p>
-        <ul class="menu menu--social">
-          <li>
-            <a
-              class="menu__link"
-              href="https://github.com/pedrojanneo"
-              target="_blank"
-            >
-              <i class="menu__icon bi bi-github"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="menu__link"
-              href="https://www.linkedin.com/in/pedrojanneo/"
-              target="_blank"
-            >
-              <i class="menu__icon bi bi-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="menu__link"
-              href="https://www.instagram.com/pedrojanneo/"
-              target="_blank"
-            >
-              <i class="menu__icon bi bi-instagram"></i>
-            </a>
-          </li>
-        </ul>
-        <a href="#projetos">
-          <button class="btn btn--primary">
-            <span>Ver Projetos</span>
-            <i class="bi bi-arrow-down-right"></i>
-          </button>
+<main id="home">
+    <div class="header__brand">
+        <a href="#home">
+            <div class="nome-programador">
+                Pedro Janneo
+            </div>
         </a>
-      </div>
-    </main>
+    </div>
+    <div class="main__content1">
+        <h1>Desenvolvedor BackEnd</h1>
+        <p id="typewriter"></p>
 
-    <section class="technologies">
-      <h2>Conhecimento nas tecnologias</h2>
-      <ul class="technologies__list">
-        <li class="technologies__item">
-          <img
-            class="technologies__logo"
-            src="assets/images/technologies/node.svg"
-            alt="Logo Node"
-          />
-        </li>
 
-        <li class="technologies__item">
-          <img
-            class="technologies__logo"
-            src="assets/images/technologies/java.svg"
-            alt="Logo Java"
-          />
-        </li>
-        <li class="technologies__item">
-          <img
-            class="technologies__logo"
-            src="assets/images/technologies/php.svg"
-            alt="Logo PHP"
-          />
-        </li>
-        <li class="technologies__item">
-          <img
-            class="technologies__logo"
-            src="assets/images/technologies/Bootstrap.svg"
-            alt="Logo Bootstrap"
-          />
-        </li>
-        <li class="technologies__item">
-          <img
-            class="technologies__logo"
-            src="assets/images/technologies/git.svg"
-            alt="Logo git "
-          />
-        </li>
-      </ul>
-    </section>
+        <ul class="menu menu--social">
+            <li>
+                <a
+                    class="menu__link"
+                    href="https://github.com/pedrojanneo"
+                    target="_blank"
+                >
+                    <i class="menu__icon bi bi-github"></i>
+                </a>
+            </li>
+            <li>
+                <a
+                    class="menu__link"
+                    href="https://www.linkedin.com/in/pedrojanneo/"
+                    target="_blank"
+                >
+                    <i class="menu__icon bi bi-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+        <!-- <a href="#projetos">
+            <button class="btn btn--primary">
+                <span>Ver Projetos</span>
+                <i class="bi bi-arrow-down-right"></i>
+            </button>
+        </a> -->
+    </div>
+</main>
 
-    <section id="projetos" class="projects">
+<section class="section-tecnologias">
+    <div class="container-full">
+        <h2>Conhecimento nas tecnologias</h2>
+        <div class="icon-group">
+            <img src="assets/images/technologies/java.svg" alt="Java">
+            <img src="assets/images/technologies/spring.svg" alt="Spring">
+            <img src="assets/images/technologies/Python.svg" alt="Python">
+            <img src="assets/images/technologies/Javascript.svg" alt="JavaScript">
+            <img src="assets/images/technologies/node.svg" alt="Node.js">
+            <img src="assets/images/technologies/php.svg" alt="PHP">
+            <img src="assets/images/technologies/Bootstrap.svg" alt="Bootstrap">
+            <img src="assets/images/technologies/html-5.svg" alt="HTML">
+            <img src="assets/images/technologies/css-3.svg" alt="CSS">
+            <img src="assets/images/technologies/mysql.svg" alt="MySQL">
+            </div>
+    </div>
+</section>
+
+<section class="section-stacks-foco">
+    <div class="container-full">
+        <h2>Com  foco em</h2>
+        <div class="icon-group">
+            <img src="assets/images/technologies/java.svg" alt="Java">
+            <img src="assets/images/technologies/spring.svg" alt="Spring">
+            </div>
+    </div>
+</section>
+
+<section id="projetos" class="projects">
       <h2>Projetos</h2>
 
       <div class="projects__container">
-        <div class="projects__card">
+
+        <div class="projects__card" id="projeto_java_cobranca">
+          <img
+            class="card__cover"
+            src="assets/images/projects/projeto-andamento.png"
+            alt="Projeto em Andamento"
+          />
+
+          <!-- Overlay para hover effect (versão web) -->
+          <div class="card__hover-overlay">
+            <div class="card__hover-content">
+              <h3 class="card__hover-title">Projeto em Andamento</h3>
+              <p class="card__hover-description">
+                Novo projeto sendo desenvolvido com Java e Spring Boot. Em breve
+                mais detalhes!
+              </p>
+
+              <div class="card__hover-technologies">
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/java.svg"
+                    alt="Logo Java"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/spring.svg"
+                    alt="Logo Spring Boot"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/mysql.svg"
+                    alt="Logo MySQL"
+                  />
+                </div>
+              </div>
+
+              <div class="card__hover-buttons">
+                <button class="btn btn--primary" disabled>
+                  <span>Em Breve</span>
+                  <i class="bi bi-clock"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conteúdo original (v versao mobile) -->
+          <div class="card__body">
+            <h3 class="card__title">-- ANDAMENTO --</h3>
+            <p class="card__description">Em breve</p>
+            <ul class="card__list">
+              <li class="card__item">Em breve</li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/java.svg"
+                  alt="Logo Java"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/spring.svg"
+                  alt="Logo Spring Boot"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/mysql.svg"
+                  alt="Logo MySQL"
+                />
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <button class="btn" disabled>
+                <span>Em Breve</span>
+                <i class="bi bi-clock"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__card" id="projeto_node_livros">
           <img
             class="card__cover"
             src="assets/images/projects/projeto-crud-node.jfif"
@@ -219,7 +292,6 @@
           <!-- Conteúdo original ( versão mobile) -->
           <div class="card__body">
             <h3 class="card__title">Sistema de Cadastro</h3>
-            <p class="card__description">Fullstack</p>
             <p>
               Projeto desenvolvido durante a formação na faculdade. Onde
               consiste em um sistema de livraria, onde pode colocar nos <br />
@@ -276,85 +348,13 @@
           </div>
         </div>
 
-        <div class="projects__card card--reverse">
-          <img
-            class="card__cover"
-            src="assets/images/projects/placeholder.jpg"
-            alt="Projeto em Andamento"
-          />
-
-          <!-- Overlay para hover effect (versão web) -->
-          <div class="card__hover-overlay">
-            <div class="card__hover-content">
-              <h3 class="card__hover-title">Projeto em Andamento</h3>
-              <p class="card__hover-description">
-                Novo projeto sendo desenvolvido com Java e Spring Boot. Em breve
-                mais detalhes!
-              </p>
-
-              <div class="card__hover-technologies">
-                <div class="technologies__item">
-                  <img
-                    class="technologies__logo"
-                    src="assets/images/technologies/java.svg"
-                    alt="Logo Java"
-                  />
-                </div>
-                <div class="technologies__item">
-                  <img
-                    class="technologies__logo"
-                    src="assets/images/technologies/spring.svg"
-                    alt="Logo Spring Boot"
-                  />
-                </div>
-              </div>
-
-              <div class="card__hover-buttons">
-                <button class="btn btn--primary" disabled>
-                  <span>Em Breve</span>
-                  <i class="bi bi-clock"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Conteúdo original (v versao mobile) -->
-          <div class="card__body">
-            <h3 class="card__title">-- ANDAMENTO --</h3>
-            <p class="card__description">Em breve</p>
-            <ul class="card__list">
-              <li class="card__item">Em breve</li>
-            </ul>
-            <ul class="technologies__list">
-              <li class="technologies__item">
-                <img
-                  class="technologies__logo"
-                  src="assets/images/technologies/java.svg"
-                  alt="Logo Java"
-                />
-              </li>
-              <li class="technologies__item">
-                <img
-                  class="technologies__logo"
-                  src="assets/images/technologies/spring.svg"
-                  alt="Logo Spring Boot"
-                />
-              </li>
-            </ul>
-            <div class="card__buttons">
-              <button class="btn" disabled>
-                <span>Em Breve</span>
-                <i class="bi bi-clock"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="projects__card">
+        <div class="projects__card" id="projeto_node_sms">
           <img
             class="card__cover"
             src="assets/images/projects/projeto-sms.png"
             alt="Capa SMS"
           />
+        
 
           <!-- Overlay para hover effect (versão web) -->
           <div class="card__hover-overlay">
@@ -415,7 +415,6 @@
           <!-- Conteúdo original (versao mobile) -->
           <div class="card__body">
             <h3 class="card__title">Notifyme</h3>
-            <p class="card__description">Fullstack</p>
             <p>
               Projeto que simula um sistema de SMS, onde o usuario pode enviar e
               receber mensagens. Como forma de lembretes de eventos futuros
@@ -473,7 +472,288 @@
           </div>
         </div>
 
-        <div class="projects__card">
+        <div class="projects__card" id="projeto_react-native_camera">
+          <img
+            class="card__cover"
+            src="assets/images/projects/projeto-scan-vision.jpg"
+            alt="Capa vision scan"
+          />
+
+          <!-- Overlay para hover effect (versão web) -->
+          <div class="card__hover-overlay">
+            <div class="card__hover-content">
+              <h3 class="card__hover-title">Vision Scan</h3>
+              <p class="card__hover-description">
+                Projeto de reconhecimento facial. Onde ao enviar sua imagem de
+                rosto, ele traz estimativa de alguns dados, como
+                <span>Idade,Genero e Emoção</span>
+              </p>
+
+              <div class="card__hover-technologies">
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/Javascript.svg"
+                    alt="Logo JavaScript"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/Python.svg"
+                    alt="Logo Python.svg"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/reactnattive.svg"
+                    alt="Logo React Native"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/Python.svg"
+                    alt="Logo Python"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="card__hover-buttons"
+                style="display: flex; gap: 10px; justify-content: center"
+              >
+                <a
+                  href="https://github.com/PedroJanneo/ScanVisionApp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button
+                    class="btn btn--primary"
+                    style="padding: 0.3rem 0.6rem; font-size: 0.8rem"
+                  >
+                    <span>APP</span>
+                    <i class="bi bi-github"></i>
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/PedroJanneo/VisionScanAPI"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button
+                    class="btn btn--primary"
+                    style="padding: 0.3rem 0.6rem; font-size: 0.8rem"
+                  >
+                    <span>API</span>
+                    <i class="bi bi-github"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conteúdo original (versão mobile) -->
+          <div class="card__body">
+            <h3 class="card__title">Vision Scan</h3>
+            <p class="card__description">Reconhecimento Facial</p>
+            <p>
+              Projeto de reconhecimento facial. Onde ao enviar sua imagem de
+              rosto, ele traz estimativa de alguns dados, como Idade, Genero e
+              Emoção.
+            </p>
+            <ul class="card__list">
+              <li class="card__item">Reconhecimento facial</li>
+              <li class="card__item">Estimativa de idade</li>
+              <li class="card__item">Estimativa de gênero</li>
+              <li class="card__item">Estimativa de emoção</li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Javascript.svg"
+                  alt="Logo JavaScript"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Python.svg"
+                  alt="Logo Python"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/reactnattive.svg"
+                  alt="Logo React Native"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Python.svg"
+                  alt="Logo Python"
+                />
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <a
+                href="https://github.com/PedroJanneo/ScanVisionApp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="btn">
+                  <span>Repositório (APP)</span>
+                  <i class="bi bi-github"></i>
+                </button>
+              </a>
+              <a
+                href="https://github.com/PedroJanneo/VisionScanAPI"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="btn">
+                  <span>Repositório (API)</span>
+                  <i class="bi bi-github"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__card" id="projeto_php_emprestimo">
+          <img
+            class="card__cover"
+            src="assets/images/projects/projeto-emprestimo.png"
+            alt="Capa Emprestimo"
+          />
+
+          <!-- Overlay para hover effect (versão web) -->
+          <div class="card__hover-overlay">
+            <div class="card__hover-content">
+              <h3 class="card__hover-title">
+                Emprestimo - Sistema de Empréstimos
+              </h3>
+              <p class="card__hover-description">
+                Sistema criado para auxiliar organizações no controle de
+                empréstimos de equipamentos, registrando quem retirou, a origem
+                do item e os dados de devolução.
+              </p>
+
+              <div class="card__hover-technologies">
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/php.svg"
+                    alt="Logo PHP"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/Bootstrap.svg"
+                    alt="Logo Bootstrap"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/Javascript.svg"
+                    alt="Logo JavaScript"
+                  />
+                </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/mysql.svg"
+                    alt="Logo MySQL"
+                  />
+                </div>
+              </div>
+
+              <div class="card__hover-buttons">
+                <a
+                  href="https://github.com/PedroJanneo/Sistema-de-gerenciamento"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button class="btn btn--primary">
+                    <span>Ver Código</span>
+                    <i class="bi bi-github"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conteúdo original (visível apenas em mobile) -->
+          <div class="card__body">
+            <h3 class="card__title">Emprestimo - Sistema de Empréstimos</h3>
+            <p>
+              Sistema criado para auxiliar organizações no controle de
+              empréstimos de equipamentos, registrando quem retirou, a origem do
+              item e os dados de devolução.
+            </p>
+            <ul class="card__list">
+              <li class="card__item">Cadastro de usuários</li>
+              <li class="card__item">
+                Registro de itens emprestados, com nome do solicitante e data do
+                empréstimo
+              </li>
+              <li class="card__item">
+                Controle de devoluções (data, responsável pelo recebimento e
+                status)
+              </li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/php.svg"
+                  alt="Logo PHP"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Bootstrap.svg"
+                  alt="Logo Bootstrap"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Javascript.svg"
+                  alt="Logo JavaScript"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/mysql.svg"
+                  alt="Logo MySQL"
+                />
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <button class="btn">
+                <a
+                  href="https://github.com/PedroJanneo/Sistema-de-gerenciamento"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Repositório</span>
+                  <i class="bi bi-github"></i>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__card" id="projeto_php_pdv">
           <img
             class="card__cover"
             src="assets/images/projects/projeto-pdv.png"
@@ -512,6 +792,13 @@
                     alt="Logo JavaScript"
                   />
                 </div>
+                <div class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/mysql.svg"
+                    alt="Logo MySQL"
+                  />
+                </div>
               </div>
 
               <div class="card__hover-buttons">
@@ -532,7 +819,6 @@
           <!-- Conteúdo original (visível apenas em mobile) -->
           <div class="card__body">
             <h3 class="card__title">PDV - Sistema de Vendas</h3>
-            <p class="card__description">CRUD PHP/PDO</p>
             <p>
               Projeto desenvolvido durante meu estágio e estudos de PHP com PDO.
               Sistema completo de ponto de venda.
@@ -564,6 +850,13 @@
                   alt="Logo JavaScript"
                 />
               </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/mysql.svg"
+                  alt="Logo MySQL"
+                />
+              </li>
             </ul>
             <div class="card__buttons">
               <button class="btn">
@@ -580,7 +873,7 @@
           </div>
         </div>
 
-        <div class="projects__card">
+        <div class="projects__card" id="projeto_documentacao_git">
           <img
             class="card__cover"
             src="assets/images/projects/projeto-git.png"
@@ -617,15 +910,32 @@
                   />
                 </div>
               </div>
-              <div class="card__hover-buttons" style="display: flex; gap: 10px; justify-content: center;">
-                <a href="https://github.com/PedroJanneo/git" target="_blank" rel="noopener noreferrer">
-                  <button class="btn btn--primary" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;">
+              <div
+                class="card__hover-buttons"
+                style="display: flex; gap: 10px; justify-content: center"
+              >
+                <a
+                  href="https://github.com/PedroJanneo/git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button
+                    class="btn btn--primary"
+                    style="padding: 0.3rem 0.6rem; font-size: 0.8rem"
+                  >
                     <span>GITHUB</span>
                     <i class="bi bi-github"></i>
                   </button>
                 </a>
-                <a href="https://pedrojanneo.github.io/Git/" target="_blank" rel="noopener noreferrer">
-                  <button class="btn btn--primary" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;">
+                <a
+                  href="https://pedrojanneo.github.io/Git/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button
+                    class="btn btn--primary"
+                    style="padding: 0.3rem 0.6rem; font-size: 0.8rem"
+                  >
                     <span>WEB</span>
                     <i class="bi bi-browser-chrome"></i>
                   </button>
@@ -693,132 +1003,10 @@
             </div>
           </div>
         </div>
-        
-        <div class="projects__card">
-          <img
-          class="card__cover"
-          src="assets/images/projects/projeto-scan-vision.jpg"
-          alt="Capa vision scan"
-          />
-          
-          <!-- Overlay para hover effect (versão web) -->
-          <div class="card__hover-overlay">
-            <div class="card__hover-content">
-              <h3 class="card__hover-title">Vision Scan</h3>
-              <p class="card__hover-description">
-                Projeto de reconhecimento facial. Onde ao enviar sua imagem de rosto, ele traz estimativa de alguns dados, como <span>Idade,Genero e Emoção</span>
-              </p>
-              
-              <div class="card__hover-technologies">
-                <div class="technologies__item">
-                  <img
-                    class="technologies__logo"
-                    src="assets/images/technologies/Javascript.svg"
-                    alt="Logo JavaScript"
-                  />
-                </div>
-                <div class="technologies__item">
-                  <img
-                    class="technologies__logo"
-                    src="assets/images/technologies/Python.svg"
-                    alt="Logo Python.svg"
-                  />
-                </div>
-                <div class="technologies__item">
-                  <img
-                    class="technologies__logo"
-                    src="assets/images/technologies/reactnattive.svg"
-                    alt="Logo React Native"
-                  />
-                </div>
-              </div>
 
-              <div class="card__hover-buttons" style="display: flex; gap: 10px; justify-content: center;">
-                <a
-                  href="https://github.com/PedroJanneo/ScanVisionApp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button class="btn btn--primary" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;">
-                    <span>APP</span>
-                    <i class="bi bi-github"></i>
-                  </button>
-                </a>
-                <a
-                  href="https://github.com/PedroJanneo/VisionScanAPI"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button class="btn btn--primary" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;">
-                    <span>API</span>
-                    <i class="bi bi-github"></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
 
-          <!-- Conteúdo original (versão mobile) -->
-          <div class="card__body">
-            <h3 class="card__title">Vision Scan</h3>
-            <p class="card__description">Reconhecimento Facial</p>
-            <p>
-              Projeto de reconhecimento facial. Onde ao enviar sua imagem de rosto, ele traz estimativa de alguns dados, como Idade, Genero e Emoção.
-            </p>
-            <ul class="card__list">
-              <li class="card__item">Reconhecimento facial</li>
-              <li class="card__item">Estimativa de idade</li>
-              <li class="card__item">Estimativa de gênero</li>
-              <li class="card__item">Estimativa de emoção</li>
-            </ul>
-            <ul class="technologies__list">
-              <li class="technologies__item">
-                <img
-                  class="technologies__logo"
-                  src="assets/images/technologies/Javascript.svg"
-                  alt="Logo JavaScript"
-                />
-              </li>
-              <li class="technologies__item">
-                <img
-                  class="technologies__logo"
-                  src="assets/images/technologies/Python.svg"
-                  alt="Logo Python"
-                />
-              </li>
-              <li class="technologies__item">
-                <img
-                  class="technologies__logo"
-                  src="assets/images/technologies/reactnattive.svg"
-                  alt="Logo React Native"
-                />
-              </li>
-            </ul>
-            <div class="card__buttons">
-              <a
-                href="https://github.com/PedroJanneo/ScanVisionApp"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button class="btn">
-                  <span>Repositório (APP)</span>
-                  <i class="bi bi-github"></i>
-                </button>
-              </a>
-              <a
-                href="https://github.com/PedroJanneo/VisionScanAPI"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button class="btn">
-                  <span>Repositório (API)</span>
-                  <i class="bi bi-github"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div> <!-- div projetos container-->
+      </div>
+      <!-- div projetos container-->
 
       <div class="text-center mt-4">
         <a href="https://github.com/pedrojanneo" target="_blank">
@@ -828,9 +1016,9 @@
           </button>
         </a>
       </div>
-    </section>
+  </section>
 
-    <section id="sobre" class="about">
+<section id="sobre" class="about">
       <div class="about__content1">
         <img
           class="about__photo"
@@ -840,12 +1028,7 @@
         <div class="about__description">
           <h2>Sobre mim</h2>
           <p>
-            Olá, sou Pedro Janneo, apaixonado por tecnologia. Meu primeiro
-            contato com programação foi no ensino médio, quando comecei a testar
-            diversas áreas e descobri o mundo do HTML, CSS e um pouco de
-            JavaScript, utilizando o VS Code. Atualmente, sou formado em Análise
-            e Desenvolvimento de Sistema e trabalho como desenvolvedor FullStack
-            Júnior na Prefeitura de Taboão da Serra.
+            Sou Pedro Janneo, um desenvolvedor com uma base sólida em Full Stack e um foco apaixonado em Backend. Minha jornada na programação, que começou com HTML, CSS e JavaScript, me deu a visão completa para transformar ideias em soluções robustas e eficientes. Atualmente, atuo na Prefeitura de Taboão da Serra, onde aplico minhas habilidades para criar sistemas que fazem a diferença. Sou formado em Análise e Desenvolvimento de Sistemas, sempre buscando evoluir e me manter atualizado com as tecnologias do mercado.
           </p>
           <div class="about__icons">
             <i class="bi bi-translate"></i>
@@ -870,47 +1053,43 @@
       <div class="about__content2">
         <div class="col1">
           <div class="row1">
-            <h3 class="fw-medium">Formação</h3>
-            <div class="card bg-dark text-white container">
-              <div class="card-body">
-                <div class="card-title">
-                  <h4>Analise e Desenvolvimento de Sistema</h4>
-                </div>
-                <div class="card-text">
-                  <span>Abril 2023 - Abril 2025</span><br />
-                  <span>Unifecaf</span>
-                </div>
+            <h3>Formação</h3>
+              <div class="card bg-dark text-white mb-3">
+                <div class="card-body">
+                  <h4 class="card-title">Análise e Desenvolvimento de Sistemas</h4>
+                  <p class="card-text mb-1">Abril 2023 - Junho 2025</p>
+                  <p class="card-text">Unifecaf</p>
               </div>
             </div>
-          </div>
-          <div class="row2">
-            <h3 class="fw-medium">Experiências</h3>
-            <div class="card bg-dark text-white container">
+            <!-- <h3>Cursos</h3>
+            <div class="card bg-dark text-white mb-3">
               <div class="card-body">
-                <div class="card-title">
-                  <h4>Estágio</h4>
-                </div>
+                <h4 class="card-title">Desenvolvimento Web</h4>
+                <p class="card-text mb-1">Janeiro 2022 - Março 2022</p>
+                <p class="card-text">Alura</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="row2">
+            <h3>Experiências</h3>
+            
+
+            <div class="card bg-dark text-white container mb-3">
+              <div class="card-body">
+                <h4 class="card-title">Estágio – Desenvolvedor Full Stack</h4>
                 <span>Prefeitura de Taboão da Serra</span><br />
-                <span>Abril 2023 - Abril 2024</span><br />
-                <span>Desenvolvedor Full-stack</span><br />
-                <span class="card-text fs-5 fw-semibold">Stacks:</span>
-                <span class="fs-6"
-                  >HTML, CSS, JavaScript, PHP, MySQL e Python</span
-                >
+                <span>Abril 2023 – Abril 2024</span><br />
+                <span>Stacks: HTML, CSS, JavaScript, PHP, MySQL, Python</span>
               </div>
             </div>
-          </div>
-          <div class="card bg-dark text-white container">
-            <div class="card-body">
-              <div class="card-title">
-                <h4>Desenvolvedor Júnior</h4>
-              </div>
-              <div class="card-text">
+
+            <div class="card bg-dark text-white container">
+              <div class="card-body">
+                <h4 class="card-title">Desenvolvedor Júnior – Full Stack</h4>
                 <span>Prefeitura de Taboão da Serra</span><br />
-                <span>Abril 2025 - Atualmente</span><br />
-                <span>Desenvolvedor Full-stack</span><br />
-                <span class="card-text fs-5 fw-semibold">Stacks:</span>
-                <span class="fs-6">HTML, CSS, JavaScript, PHP e MySQL</span>
+                <span>Abril 2025 – Atualmente</span><br />
+                <span>Stacks: HTML, CSS, JavaScript, PHP, MySQL</span>
               </div>
             </div>
           </div>
@@ -918,7 +1097,7 @@
       </div>
     </section>
 
-    <section id="contato" class="contact">
+<section id="contato" class="contact">
       <h2>Contate-me</h2>
       <p>
         Estou disponível para serviços e novas conexões. Contate-me via e-mail e
@@ -945,12 +1124,6 @@
             <span>LinkedIn</span>
           </a>
         </li>
-        <li>
-          <a class="menu__link" href="https://www.instagram.com/pedrojanneo/" target="_blank">
-            <i class="menu__icon bi bi-instagram"></i>
-            <span>Instagram</span>
-          </a>
-        </li>
       </ul>
       <a href="mailto:pdro.henriquejanneo@gmail.com">
         <button class="btn btn--primary">
@@ -959,17 +1132,37 @@
       </a>
     </section>
 
-    <footer>
+<footer>
       <p>
         © 2023. Portfólio do
-        <a href="https://github.com/pedrojanneo" target="_blank">Pedro Janneo</a>.
+        <a href="https://github.com/pedrojanneo" target="_blank">Pedro Janneo</a
+        >.
       </p>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
     <script src="./assets/scripts/main.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+
+    <script>
+  const text = "Transformando desafios em sistemas escaláveis.";
+  let index = 0;
+
+  function type() {
+    if (index < text.length) {
+      document.getElementById("typewriter").innerHTML += text.charAt(index);
+      index++;
+      setTimeout(type, 50); // velocidade de digitação
+    }
+  }
+
+  type();
+    </script>
+
   </body>
 </html>
